@@ -1,0 +1,5 @@
+The chart analyzes data on terrorist attacks in Lebanon from 1970 to 2021.
+From only 1 attack in 1970 to 234 attacks in 1983, there was a marked increase. After 1983, the number of attacks gradually decreased, but the number remained relatively high throughout the 1980s, averaging about 120 attacks per year from 1984 to 1989.
+During the 1990s, attacks generally declined. The early 2000s were a relatively quiet period, with the number of attacks dropping to single digits in some years. For example, only one attack was reported in 2004, the lowest level since 1970.
+There were significant spikes in 2014, with 205 attacks. The 205 attacks in 2014 were the second-highest annual attack total in the chart, behind the 234 attacks in 1983.
+After 2014, there was another decline. From 2015 to 2021, the number of attacks per year ranged from one to 44, with an average of about 19 attacks per year.

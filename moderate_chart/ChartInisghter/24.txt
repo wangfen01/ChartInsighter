@@ -1,0 +1,5 @@
+The chart is a line graph depicting the trend of the refugee population in Yemen from 1977 to 2023.  This visualization focuses specifically on the number of refugees from Yemen over the indicated period.
+
+The data illustrates several distinct phases in refugee numbers.  Initially, from 1977, there was a noticeable increase in the refugee population, culminating in 105,000 refugees by 1986.  This upward trajectory was followed by a sharp decline, dropping to a notably lower figure of 2,938 by 1990.  The following years from 1990 to 1997 saw another rise, with the numbers reaching 59,680 in 1992.  The refugee population continued to grow over the long period from 1997 to 2017, eventually reaching 270,913.  However, this growth was not sustained, as a decline was noted again from 2017 to 2023, with the number decreasing to 55,568 by the end of this range.
+
+The data narrates a cycle of growth and decline with periods of significant demographic shifts within Yemen, emphasizing the dynamic and evolving nature of refugee trends over the decades.

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Sex Ratio of Five-Year-Olds, 1950 to Recent Year"
+  },
+  "data": {
+    "url": "../data/21.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "Sex ratio - Sex: all - Age: 5 - Variant: estimates",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of Boys per 100 Girls at Age Five"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {
+        "title": "Country"
+      }
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal"},
+      {"field": "Year", "type": "temporal"},
+      {"field": "Sex ratio - Sex: all - Age: 5 - Variant: estimates", "type": "quantitative"}
+    ]
+  },
+  "config": {
+    "line": {
+      "point": true
+    }
+  }
+}

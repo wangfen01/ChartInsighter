@@ -1,0 +1,7 @@
+This chart shows a line graph of coal consumption in North America and India over time. 
+
+Coal consumption in North America had been high for a long time and showed a growing trend from 3421 TWh in 1965 until 6837 TWh in 2007 century, followed by a steady decline to 2486 in 2023.
+
+At the same time, India's coal consumption has been growing steadily, from 413 TWh in 1965 to 6105 TWh in 2023, with only one dip in 2020.
+
+While North America continued to lead India since 1965, in 2005, India's coal consumption surpassed that of North America and continued to grow, while North America continued to decline.

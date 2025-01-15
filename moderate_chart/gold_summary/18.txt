@@ -1,0 +1,1 @@
+This line chart shows the trend of patent applications per million people in Cuba from 1980 to 2021. After a slight decline from 1980 to 1981, the numbers fluctuated upwards until 1984, followed by a sharp drop to nearly zero in 1992–1993. It then rose again, stabilizing around 10 from 1993 to 2005, before fluctuating downward from 7 in 2007 to about 2 by 2021.

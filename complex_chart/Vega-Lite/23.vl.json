@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Fertility Rate: Children per Woman, 1816 to 2015"
+  },
+  "data": {
+    "url": "../data/23.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "Fertility rate (Gapminder, v12, 2017)",
+      "type": "quantitative",
+      "axis": {
+        "title": "Fertility Rate (children per woman)"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {
+        "title": "Country"
+      }
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal"},
+      {"field": "Year", "type": "temporal"},
+      {"field": "Fertility rate (Gapminder, v12, 2017)", "type": "quantitative"}
+    ]
+  }
+}

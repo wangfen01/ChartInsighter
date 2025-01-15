@@ -1,0 +1,1 @@
+The chart represents the annual yield on 10-year Belgian government bonds from 1995 to 2022.   In terms of general trends, long-term yields have declined markedly, from 6.71% in 1995 to as low as -0.15% in 2020, with some fluctuations during this period.   Thereafter, yields recover slightly, reaching 1.74% in 2022, but remain significantly lower than yields in previous years.

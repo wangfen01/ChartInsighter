@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart displaying trends in Consumer Price and Inflation Expectation over time.",
+    "data": {
+      "url": "../data/5.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "observation_date",
+        "type": "temporal",
+        "title": "Observation Date",
+        "axis": {
+          "format": "%Y-%m"
+        }
+      },
+      "y": {
+        "field": "inflation",
+        "type": "quantitative",
+        "title": "Inflation (%)"
+      },
+      "color": {
+        "field": "symbol",
+        "type": "nominal",
+        "title": "Category",
+        "legend": {
+          "title": "Category"
+        }
+      }
+    },
+    "width": 800,
+    "height": 400
+  }

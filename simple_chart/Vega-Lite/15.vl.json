@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Life expectancy",
+    "data": {
+      "url": "..\\data\\15.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year"
+      },
+      "y": {
+        "field": "Period life expectancy at birth - Sex: all - Age: 0",
+        "type": "quantitative",
+        "title": "Life Expectancy (Years)"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {"field": "Period life expectancy at birth - Sex: all - Age: 0", "type": "quantitative", "title": "life expectancy"}
+      ]
+    }
+  }
+  

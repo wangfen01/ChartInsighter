@@ -1,0 +1,4 @@
+This line graph shows how the stocks of AMAZ (Amazon) and GOOG (Google) changed from 2000 to 2010. 
+GOOG's stock showed an upward trend since 102.37 in September of 2004, although slightly fluctuated. It reached a peak of 707 in October of 2007 and then dropped dramatically to 292.96 in November of 2008. Then recovered to 619.98 in December of 2009, but soon fell again. 
+AMAZ fell slightly since 2001 and kept rising and reached a peak of 707 in late 2007. Then followed a big fall to 292.96 in December of 2008 but recovered to before in 2010. 
+AMAZ was lower over the time span but was more stable, while GOOG experienced big ups and downs between 2007 and 2010.

@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Phosphate fertilizer use per area of cropland",
+    "data": {
+      "url": "..\\data\\13.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "phosphate fertilizer use",
+        "type": "quantitative",
+        "axis": {
+          "title": "phosphate fertilizer use"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Year", "type": "temporal"},
+        {"field": "phosphate feritilizer use", "type": "quantitative"}
+      ]
+    }
+  }

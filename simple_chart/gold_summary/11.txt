@@ -1,0 +1,7 @@
+The chart shows a line graph of coal consumption over time for continental Europe and India. 
+
+Coal consumption in Europe was high for a long time from 1965 to 1989, fluctuating at over 9000 TWh, but it has declined significantly since then. It kept falling to 2950 TWh in 2023.
+
+At the same time, India's coal consumption has been growing steadily, from 413 TWh in 1965 to 6105 TWh in 2023, with only one dip in 2020.
+
+India has industrialized and is proliferating, in 2016, it surpassed Europe in terms of coal consumption and is still growing, while coal consumption in continental Europe is still declining.

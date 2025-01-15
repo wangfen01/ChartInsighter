@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Sex ratio at birth, 1950 to 2023",
+    "data": {
+      "url": "..\\data\\12.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Sex ratio",
+        "type": "quantitative",
+        "axis": {
+          "title": "Sex Ratio (Males per 100 Females)"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Year", "type": "temporal"},
+        {"field": "Sex ratio", "type": "quantitative"}
+      ]
+    }
+  }

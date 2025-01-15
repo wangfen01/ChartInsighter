@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "../data/1.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "observation_date",
+      "type": "temporal",
+      "axis": {
+        "title": "Observation Date"
+      }
+    },
+    "y": {
+      "field": "VALUE",
+      "type": "quantitative",
+      "axis": {
+        "title": "Value"
+      }
+    },
+    "color": {
+      "field": "symbol",
+      "type": "nominal",
+      "title": "Index",
+      "legend": {
+        "orient": "top",
+        "columns": 1, 
+        "title": "Symbol",
+        "labelExpr": "if(datum.value === 'CN', 'CN: Consumer Price Index for All Urban Consumers: Sugar and Sweets in U.S. City Average', if(datum.value === 'PB', 'PB: Global price of Sugar, No. 11, World', if(datum.value === 'PN', 'PN: Global price of Sugar, No. 16, U.S.', datum.value)))",
+        "labelLimit": 500 
+      }
+    }
+  },
+  "config": {
+    "legend": {
+      "orient": "top", 
+      "columns": 1 
+    }
+  },
+  "width": 800,
+  "height": 450, 
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Refugee Population in Yemen, 1977 to 2023"
+  },
+  "data": {
+    "url": "../data/24.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "Refugees by destination",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of Refugees"
+      }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal"},
+      {"field": "Refugees by destination", "type": "quantitative"}
+    ]
+  }
+}

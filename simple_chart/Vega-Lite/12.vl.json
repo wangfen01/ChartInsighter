@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Coal consumption",
+    "data": {
+      "url": "..\\data\\12.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "axis": {"title": "Year"}
+      },
+      "y": {
+        "field": "Coal consumption",
+        "type": "quantitative",
+        "axis": {"title": "Coal Consumption"}
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {"title": "Region"}
+      },
+      "tooltip": [
+        {"field": "year", "type": "temporal", "title": "Year"},
+        {"field": "Coal consumption", "type": "quantitative", "title": "Coal Consumption (TWh)"},
+        {"field": "Entity", "type": "nominal", "title": "Region"}
+      ]
+    }
+  }

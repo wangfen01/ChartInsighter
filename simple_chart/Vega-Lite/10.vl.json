@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A line chart depicting the percentage of the total population living in urban and rural areas from 1960 to 2022.",
+    "data": {
+      "url": "../data/10.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "ordinal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "% of total population",
+        "type": "quantitative",
+        "axis": {
+          "title": "% of Total Population"
+        }
+      },
+      "color": {
+        "field": "area",
+        "type": "nominal",
+        "legend": {
+          "title": "Area"
+        }
+      }
+    }
+  }

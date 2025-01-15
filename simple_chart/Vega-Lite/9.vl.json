@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart showing the proportion of urban population living in slums over the years by entity.",
+    "data": {
+      "url": "../data/9.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Proportion of urban population living in slums (%) - EN_LND_SLUM",
+        "type": "quantitative",
+        "axis": {
+          "title": "Proportion of Urban Population Living in Slums (%)"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Entity"
+        }
+      }
+    }
+  }

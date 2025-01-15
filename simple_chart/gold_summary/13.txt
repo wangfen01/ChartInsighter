@@ -1,0 +1,9 @@
+This chart shows a line graph of the trust of the people of three countries, China, the United States, and France from 1984 to 2022. 
+
+The United States peaks at 50% in 1993 followed by a decline to 35% in 1998. And then stabilized at around 36%.
+
+Trust in China fell from 59% in 1993 to 50% in 1998 and then remained stable at over 50% between 1998 and 2010, but has risen steadily to 63% in 2022 since then. 
+
+France kept rising steadily throughout the time from 22% in 1984 to 26% in 2022.
+
+Comparing the trust of the people of the three countries, overall, China has the highest level of trust over the time span, followed by the United States and France. However, France was the most stable with a slight increase. 

@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Annual patent applications per million people",
+    "width": 500,
+    "data": {
+      "url": "..\\data\\18.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Patent applications per million people",
+        "type": "quantitative",
+        "axis": {
+          "title": "Patent Applications per Million People"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal"},
+        {"field": "Patent applications per million people", "type": "quantitative"}
+      ]
+    }
+  }

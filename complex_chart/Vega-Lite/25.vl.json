@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Birth Rate, 1949 to 1961"
+    },
+    "data": {
+      "url": "../data/25.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "International Historical Statistics (Births per 1,000) (Brian Mitchell (2013))",
+        "type": "quantitative",
+        "axis": {
+          "title": "Births per 1,000 People"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal"},
+        {"field": "International Historical Statistics (Births per 1,000) (Brian Mitchell (2013))", "type": "quantitative"}
+      ]
+    }
+  }
+  

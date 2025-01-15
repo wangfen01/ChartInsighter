@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Number of terrorist attacks",
+    "data": {
+      "url": "..\\data\\16.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Terrorist attacks",
+        "type": "quantitative",
+        "axis": {
+          "title": "Number of Terrorist Attacks"
+        }
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal"},
+        {"field": "Terrorist attacks", "type": "quantitative"}
+      ]
+    }
+  }

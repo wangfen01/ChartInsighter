@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart representing the value of TWEXBMTH over time.",
+  "data": {
+    "url": "../data/2.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "width": 800,
+  "height": 400,
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "observation_date",
+      "type": "temporal",
+      "axis": {
+        "title": "Observation Date"
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "Value"
+      }
+    },
+    "color": {
+      "field": "symbol",
+      "type": "nominal",
+      "legend": {
+        "title": "Index",
+        "orient": "top",  
+        "labelExpr": "if(datum.value === 'TWEXBMTH', 'TWEXBMTH:Nominal Broad U.S.Dollar Index', 'TWEXBPA:Real Broad Dollar Index')",
+        "labelLimit": 500, 
+        "labelFont": "monospace", 
+        "labelFontSize": 12 
+      }
+    }
+  },
+  "config": {
+    "legend": {
+      "padding": 10, 
+      "margin": 5   
+    }
+  },
+  "autosize": {
+    "type": "fit",  
+    "contains": "padding"
+  }
+}

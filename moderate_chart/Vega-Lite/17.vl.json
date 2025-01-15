@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "data": {
+      "url": "..\\data\\17.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "observation_date",
+        "type": "temporal",
+        "axis": {
+          "title": "Date",
+          "format": "%Y/%m/%d"
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {
+          "title": "Rental Vacancy Rate (%)"
+        }
+      },
+      "color": {
+        "field": "symbol",
+        "legend": {
+          "title": "Type",
+          "orient": "top"
+        }
+      },
+      "tooltip": [
+        {"field": "observation_date", "type": "temporal", "title": "Date"},
+        {"field": "value", "type": "quantitative", "title": "Vacancy Rate"}
+      ]
+    }
+  }

@@ -1,0 +1,21 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Fish landings by British vessels over time",
+    "data": {
+      "url": "../data/4.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year"
+      },
+      "y": {
+        "field": "Fish landings by British vessels",
+        "type": "quantitative",
+        "title": "Fish Landings (Metric Tons)"
+      }
+    }
+  }
+  

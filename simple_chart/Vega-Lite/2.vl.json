@@ -1,0 +1,14 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Stock prices for APPL and GOOG over time",
+    "data": {
+      "url": "../data/2.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "price", "type": "quantitative", "title": "Price (USD)"},
+      "color": {"field": "symbol", "type": "nominal", "title": "Stock Symbol"}
+    }
+}  

@@ -1,0 +1,7 @@
+This chart shows trends in international tourist departures (per 1,000 people) for Canada and Norway from 1995 to 2022. 
+
+Canada has maintained relatively steady growth throughout the period, from 618 in 1995 to 875 in 2019, an average annual growth rate of about 1.5 percent, followed by a sharp decline in 2020 before recovering to 551 in 2022. 
+
+Norway, by contrast, has seen an even more dramatic rise, from 135 in 1995 to a peak of 1843 in 2012, then fluctuated downward to 1,662 in 2019, an average annual growth rate of 11%. Norway experienced a sharp decline in 2020 and resumed its growth trend after that. It's worth noting that Norway saw a significant jump in 1999, going from 171 in 1997 to 509 in 1999, an increase of nearly 200%. 
+
+Norway's growth rate was faster than Canada's. Between 1999 and 2007, both countries shared similar values. However, in 2019, Norway received almost twice as many outbound visitors (1,662) as Canada(875). 	And both countries experienced a sharp decline in 2020.

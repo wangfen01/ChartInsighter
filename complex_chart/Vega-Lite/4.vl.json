@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "../data/4.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year",
+        "axis": {"format": "%Y", "labelAngle": -45}
+      },
+      "y": {
+        "field": "Government expenditure (% of GDP)",
+        "type": "quantitative",
+        "title": "Government Expenditure (% of GDP)"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {
+          "domain": ["Chile", "Germany"],
+          "range": ["#1f77b4", "#ff7f0e"]
+        },
+        "legend": {"title": "Country"}
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {"field": "Year", "type": "temporal", "title": "Year", "format": "%Y"},
+        {"field": "Government expenditure (% of GDP)", "type": "quantitative", "title": "Gov. Expenditure (% of GDP)"}
+      ]
+    },
+    "width": 800,
+    "height": 400
+  }

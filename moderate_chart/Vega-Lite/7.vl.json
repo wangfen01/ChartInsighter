@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart showing the average effective age of retirement in Italy and Mexico from 1994 to 2018.",
+    "data": {
+      "url": "../data/7.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year",
+        "axis": {"labelAngle": -45}
+      },
+      "y": {
+        "field": "Average effective age of retirement",
+        "type": "quantitative",
+        "title": "Average Effective Age of Retirement (years)"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {
+          "domain": ["Italy", "Mexico"],
+          "range": ["#1f77b4", "#ff7f0e"]
+        },
+        "legend": {"title": "Country"}
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {"field": "Year", "type": "ordinal", "title": "Year"},
+        {"field": "Average effective age of retirement", "type": "quantitative", "title": "Average Effective Age of Retirement"}
+      ]
+    },
+    "width": 800,
+    "height": 400
+  }

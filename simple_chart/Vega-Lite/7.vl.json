@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart showing the GDP of Afghanistan from 2008 to 2022.",
+  "data": {
+    "url": "../data/7.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "GDP in Afghanistan",
+      "type": "quantitative",
+      "title": "GDP (in billion USD)"
+    },
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year"},
+      {"field": "GDP in Afghanistan", "type": "quantitative", "title": "GDP (billion USD)"}
+    ]
+  }
+}

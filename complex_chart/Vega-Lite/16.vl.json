@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "data": {
+      "url": "..\\data\\16.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "observation_date",
+        "type": "temporal",
+        "axis": {
+          "title": "Date"
+        }
+      },
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "axis": {
+          "title": "Equivalent Rent Value"
+        }
+      },
+      "color": {
+        "field": "symbol",
+        "type": "nominal",
+        "legend": {
+          "title": "Type",
+          "orient": "top",
+          "labelLimit": 300
+        }
+      },
+      "tooltip": [
+        {"field": "observation_date", "type": "temporal", "title": "Date"},
+        {"field": "value", "type": "quantitative", "title": "Equivalent Rent Value"}
+      ]
+    }
+  }

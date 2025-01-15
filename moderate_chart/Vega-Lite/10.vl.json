@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Displaying trends in Rental Vacancy Rates and Homeownership Rates in the United States over time.",
+  "data": {
+    "url": "../data/10.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "observation_date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {"format": "%Y-%m"}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Percentage (%)"
+    },
+    "color": {
+      "field": "symbol",
+      "type": "nominal",
+      "legend": {"title": "Indicator", "orient": "top"}
+    },
+    "tooltip": [
+      {"field": "observation_date", "type": "temporal", "title": "Date", "format": "%Y-%m-%d"},
+      {"field": "value", "type": "quantitative", "title": "Value"},
+      {"field": "symbol", "type": "nominal", "title": "Indicator"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"}
+  }
+}

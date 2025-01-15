@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "../data/10.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Government expenditure (% of GDP)",
+        "type": "quantitative",
+        "axis": {
+          "title": "Government Expenditure (% of GDP)"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Year", "type": "temporal"},
+        {"field": "Government expenditure (% of GDP)", "type": "quantitative"}
+      ]
+    }
+  }

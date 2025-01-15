@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Terrorist attacks trends in El Salvador and Lebanon (1970-2021).",
+    "data": {
+      "url": "../data/3.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year"
+      },
+      "y": {
+        "field": "Terrorist attacks",
+        "type": "quantitative",
+        "title": "Number of Terrorist Attacks"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "Entity",
+          "oneOf": ["Lebanon", "El Salvador"]
+        }
+      }
+    ]
+  }

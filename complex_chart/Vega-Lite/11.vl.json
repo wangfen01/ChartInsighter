@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Ratio of inbound to outbound tourist trips,1995 to 2022",
+    "data": {
+      "url": "..\\data\\11.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Ratio of inbound to outbound tourist trips",
+        "type": "quantitative",
+        "axis": {
+          "title": "Ratio of Inbound to Outbound Tourist Trips"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Year", "type": "temporal"},
+        {"field": "Ratio of inbound to outbound tourist trips", "type": "quantitative"}
+      ]
+    }
+  }

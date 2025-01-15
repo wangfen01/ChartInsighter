@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Unemployment rate in Tokyo by gender over time",
+    "data": {
+        "url": "../data/5.csv",
+        "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+        "x": {
+            "field": "year",
+            "type": "temporal",
+            "axis": {"title": "Year"}
+        },
+        "y": {
+            "field": "Unemployment rate in Tokyo",
+            "type": "quantitative",
+            "axis": {"title": "Unemployment Rate"}
+        },
+        "color": {
+            "field": "gender",
+            "type": "nominal",
+            "legend": {"title": "Gender"}
+        },
+        "tooltip": [
+            {"field": "year", "type": "temporal", "title": "Year"},
+            {"field": "Unemployment rate in Tokyo", "type": "quantitative", "title": "Unemployment Rate"},
+            {"field": "gender", "type": "nominal", "title": "Gender"}
+        ]
+    }
+}

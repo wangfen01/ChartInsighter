@@ -1,0 +1,41 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Per Capita CO₂ Emissions from Coal in India, 1858 to Recent Years"
+    },
+    "data": {
+      "url": "../data/25.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Annual CO2 emissions from coal (per capita)",
+        "type": "quantitative",
+        "axis": {
+          "title": "Tonnes of CO₂ per Person"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal"},
+        {"field": "Annual CO₂ emissions from coal (per capita)", "type": "quantitative"}
+      ]
+    }
+  }
+  

@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Refugee Population in Algeria, 1970 to Recent Years"
+  },
+  "data": {
+    "url": "../data/21.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "Refugees by destination",
+      "type": "quantitative",
+      "axis": {
+        "title": "Number of Refugees"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {
+        "title": "Country or Territory"
+      }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal"},
+      {"field": "Refugees by destination", "type": "quantitative"}
+    ]
+  }
+}

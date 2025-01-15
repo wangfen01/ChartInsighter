@@ -1,0 +1,7 @@
+This chart shows the trend of international tourist departures (per 1000 people) from 2003 to 2022 in Armenia and Zimbabwe.
+
+Armenia has shown a significant upward trend throughout the period, with a sharp increase from 55.6 in 2003 to 643.3 in 2019.    Armenia's numbers have plummeted to 119.7 in 2020, a drop of 81.4%.    Armenia recovered slightly to 395.4 in 2022.
+
+Zimbabwe's growth has been slower and less volatile.    It was quite stable from 23.3 in 1995 to 52.1 in 2012.    The year 2013 was a key turning point for Zimbabwe, with a sudden jump to 210.2, an increase of more than 300%, and then it reached a plateau between 2013 and 2019.    Zimbabwe dropped from 214.5 in 2019 to 37.8 in 2021 followed by a rebound.
+
+It should be noted that Armenia maintained a greater growth trend throughout the observation period.    Both countries experienced a sharp fall in 2019, and by 2022, there had been a rebound in both countries.

@@ -1,0 +1,19 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 600,
+    "height": 400,
+    "title": "Yearly Yield on Ten-Year Government Bonds in Belgium (1995-2022)",
+    "data": {
+      "url": "../data/4.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": {
+      "type": "line",
+      "point": true
+    },
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "title": "Year"},
+      "y": {"field": "Yearly yield on ten-year government bonds in Belgium", "type": "quantitative", "title": "Yearly Yield (%)"},
+      "tooltip": [{"field": "year", "type": "temporal"}, {"field": "yield", "type": "quantitative"}]
+    }
+  }

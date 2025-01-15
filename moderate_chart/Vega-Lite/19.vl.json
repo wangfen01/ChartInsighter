@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "title": "Fish catch in the United Kingdom",
+  "data": {
+    "url": "..\\data\\19.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "tickCount": 20
+      }
+    },
+    "y": {
+      "field": "Fish landings by British vessels",
+      "type": "quantitative",
+      "axis": {
+        "title": "Fish Landings (Metric Tons)"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "legend": {
+        "title": "Country",
+        "orient": "top"
+      }
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal"},
+      {"field": "Fish landings by British vessels", "type": "quantitative"}
+    ]
+  }
+}

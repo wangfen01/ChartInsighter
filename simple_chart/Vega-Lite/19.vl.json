@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "title": "Air passengers, 1970 to 2021",
+   "data": {
+      "url": "..\\data\\19.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {"title": "Year"}
+      },
+      "y": {
+        "field": "Air transport passengers carried",
+        "type": "quantitative",
+        "axis": {"title": "Air Transport Passengers Carried"}
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {"title": "Country"}
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
+        {"field": "Air transport passengers carried", "type": "quantitative", "title": "Passengers Carried"},
+        {"field": "Entity", "type": "nominal", "title": "Country"}
+      ]
+    }
+  }

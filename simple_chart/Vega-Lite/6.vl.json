@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "title": "Yearly Working Hours Among U.S. Dentists (1990-2022)",
+  "data": {
+    "url": "../data/6.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "Yearly working hours among all US dentists",
+      "type": "quantitative",
+      "title": "Yearly Working Hours"
+    },
+    "tooltip": [
+      {"field": "year", "type": "temporal", "title": "Year"},
+      {"field": "Yearly working hours among all U.S. dentists", "type": "quantitative", "title": "Working Hours"}
+    ]
+  }
+}

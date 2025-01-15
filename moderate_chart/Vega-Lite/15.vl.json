@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "title": "International tourist departures per 1,000 people",
+    "data": {
+      "url": "..\\data\\15.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "International tourist departures per 1,000 people",
+        "type": "quantitative",
+        "axis": {
+          "title": "International Tourist Departures per 1,000 People"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Year", "type": "temporal"},
+        {"field": "International tourist departures per 1,000 people", "type": "quantitative"}
+      ]
+    }
+  }

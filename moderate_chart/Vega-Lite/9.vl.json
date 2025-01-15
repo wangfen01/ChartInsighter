@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart showing the trends of values over time for different symbols.",
+    "data": {
+      "url": "../data/9.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "observation_date",
+        "type": "temporal",
+        "title": "Observation Date",
+        "axis": {
+          "format": "%Y-%m-%d",
+          "labelAngle": -45
+        }
+      },
+      "y": {
+        "field": "VALUE",
+        "type": "quantitative",
+        "title": "Value"
+      },
+      "color": {
+        "field": "symbol",
+        "type": "nominal",
+        "title": "Symbol",
+        "legend": {
+        "orient": "top", 
+        "title": null,  
+        "labelExpr": "datum.value === 'APU1' ? 'APU1: Average Price: Grapes ' :'APU2: Average Price: Strawberries'",
+        "labelFont": "monospace",
+        "labelFontSize": 12,
+        "labelLimit": 500  
+        },
+        "scale": {
+          "domain": ["APU1", "APU2"],
+          "range": ["#1f77b4", "#ff7f0e"]
+        }
+      },
+      "tooltip": [
+        {"field": "symbol", "type": "nominal"},
+        {"field": "observation_date", "type": "temporal", "format": "%Y-%m-%d"},
+        {"field": "VALUE", "type": "quantitative"}
+      ]
+    },
+    "width": 800,
+    "height": 400
+  }

@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart showing the changes in the sex ratio over years for Algeria and China.",
+    "data": {
+      "url": "../data/6.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year",
+        "axis": {"labelAngle": -45}
+      },
+      "y": {
+        "field": "Sex ratio",
+        "type": "quantitative",
+        "title": "Sex Ratio"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {
+          "domain": ["Algeria", "China"],
+          "range": ["#1f77b4", "#ff7f0e"]
+        },
+        "legend": {"title": "Country"}
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {"field": "Year", "type": "ordinal", "title": "Year"},
+        {"field": "Sex ratio", "type": "quantitative", "title": "Sex Ratio"}
+      ]
+    },
+    "width": 800,
+    "height": 400
+  }

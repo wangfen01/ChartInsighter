@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Line chart showing the annual coal consumption across different entities.",
+    "data": {
+      "url": "../data/1.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Coal consumption - TWh",
+        "type": "quantitative",
+        "axis": {
+          "title": "Coal Consumption (TWh)"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Entity"
+        }
+      }
+    }
+  }

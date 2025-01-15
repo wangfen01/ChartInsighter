@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Fertility Rate: Children per Woman",
+  "data": {
+    "url": "../data/21.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "Fertility rate - Sex: all - Age: all - Variant: estimates",
+      "type": "quantitative",
+      "axis": {
+        "title": "Fertility Rate"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {
+        "title": "Entity"
+      }
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal"},
+      {"field": "Year", "type": "temporal"},
+      {"field": "Fertility rate - Sex: all - Age: all - Variant: estimates", "type": "quantitative"}
+    ]
+  }
+}

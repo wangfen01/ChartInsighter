@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "title": "Average effective age of retirement for women, 1970 to 2018",
+    "data": {
+      "url": "..\\data\\20.csv",
+      "format": {
+        "type": "csv"
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {
+          "title": "Year"
+        }
+      },
+      "y": {
+        "field": "Average effective age of retirement, women (OECD)",
+        "type": "quantitative",
+        "axis": {
+          "title": "Average Retirement Age"
+        }
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "legend": {
+          "title": "Country"
+        }
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal"},
+        {"field": "Year", "type": "temporal"},
+        {"field": "Average effective age of retirement, women (OECD)", "type": "quantitative"}
+      ]
+    }
+  }

@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Share of people agreeing with the statement \"most people can be trusted\", 1984 to 2022",
+    "data": {
+      "url": "..\\data\\13.csv"
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "Year"
+      },
+      "y": {
+        "field": "Agree \\\"Most people can be trusted\\\"",
+        "type": "quantitative",
+        "title": "Agree 'Most people can be trusted' (%)"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country"
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
+        {"field": "Agree \\\"Most people can be trusted\\\"", "type": "quantitative", "title": "Agree"},
+        {"field": "Entity", "type": "nominal", "title": "Country"}
+      ]
+    },
+    "width": 500,
+    "height": 400
+  }
+  

@@ -1,0 +1,11 @@
+Analyzing government expenditure as a percentage of GDP from 1880 to 2022 for the United States and Austria reveals distinct fiscal patterns shaped by historical and economic contexts. For the United States, the trend starts relatively low, averaging around 2% to 3% towards the end of the 19th century and gradually increasing. Notable spikes are observed during significant events such as World War I, where it peaked at 18.97% in 1918, and more dramatically during World War II, reaching a peak of 44.08% in 1945. Post-war expenditure declined but saw upticks during economic recessions and the 2008 financial crisis, culminating in another peak of 44.82% in 2020 due to the COVID-19 pandemic response.
+
+In contrast, Austria's government expenditure data, available from 1880, shows more variability and generally higher percentages earlier on compared to the U.S., reflecting different governmental and social structures. The expenditure saw dramatic increases during crises, particularly during World War I and World War II, although data for some war years are missing. The post-war era for Austria also displays high expenditure, reflecting reconstruction and state welfare expansion, with recent years showing a modern increase similar to global economic trends, peaking at 56.78% in 2020 during the pandemic.
+
+Both countries show an upward trend in government expenditure relative to GDP as they respond to major economic challenges and shifts towards increased social welfare and public services spending. The 21st century highlights the role of government in economic stabilization, especially noticeable during global crises like the financial meltdown and the recent pandemic, indicating a trend of increasing government intervention in economic affairs through fiscal policies.
+
+
+
+
+
+

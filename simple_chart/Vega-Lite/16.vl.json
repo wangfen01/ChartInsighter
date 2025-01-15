@@ -1,0 +1,18 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Stock prices for GOOG over time",
+    "data": {
+      "url": "..\\data\\16.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "date", "type": "temporal", "title": "Date"},
+      "y": {"field": "price", "type": "quantitative", "title": "Price (USD)"},
+      "color": {"field": "symbol", "type": "nominal", "title": "Stock Symbol"},
+      "tooltip": [
+        {"field": "date", "type": "temporal", "title": "Date"},
+        {"field": "price", "type": "quantitative", "title": "Price (USD)"}
+      ]
+    }
+  }

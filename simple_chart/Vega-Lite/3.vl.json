@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart depicting the electricity production from nuclear sources over time.",
+  "data": {
+    "url": "../data/3.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "Electricity from nuclear - TWh",
+      "type": "quantitative",
+      "axis": {
+        "title": "Electricity from Nuclear (TWh)"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {
+        "title": "Entity"
+      }
+    }
+  }
+}

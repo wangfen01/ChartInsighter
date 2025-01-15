@@ -1,0 +1,7 @@
+This chart shows the change in phosphate fertilizer usage data for Myanmar and Iceland from 1961 to 2021. 
+
+From 26.88 kg/ha in 1961, phosphate use in Iceland experienced a long period of growth and fluctuations, reaching a peak of 67.16 kg/ha in 1982, then fluctuating downwards to 34.67 kg/ha in 2009. And it rose to another peak of 73.32 kg/ha in 2014, and then a sharp decline, falling to 12.25 kg/ha in 2019, even lower than the starting point in 1961.
+
+Myanmar's data show a different pattern. From 1961 to 2016, phosphate use in Myanmar remained at a low level, below 5 kg/ha in most years. However, from 2017 onwards, Myanmar saw a sudden surge in usage, jumping from 2.48 kg/ha in 2016 to a peak of 14.48 kg/ha in 2019. 
+
+Iceland's usage was much higher than Myanmar's almost throughout the period, but the trend in both countries has changed significantly in recent years. By 2019, Myanmar's usage (14.48 kg/ha) surpassed Iceland's (12.25 kg/ha) for the first time.

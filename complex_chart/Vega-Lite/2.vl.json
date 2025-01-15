@@ -1,0 +1,38 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "../data/2.csv",
+      "format": {"type": "csv"}
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": "Year",
+        "axis": {"labelAngle": -45}
+      },
+      "y": {
+        "field": "Sex ratio",
+        "type": "quantitative",
+        "title": "Sex Ratio"
+      },
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {
+          "domain": ["Barbados", "United States"],
+          "range": ["#1f77b4", "#ff7f0e"]
+        },
+        "legend": {"title": "Country"}
+      },
+      "tooltip": [
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {"field": "Year", "type": "ordinal", "title": "Year"},
+        {"field": "Sex ratio", "type": "quantitative", "title": "Sex Ratio"}
+      ]
+    },
+    "width": 800,
+    "height": 400
+  }

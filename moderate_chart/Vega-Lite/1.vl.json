@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Comparison of Moody's Seasoned Baa Corporate Bond Yield and 30-Year Fixed Rate Mortgage Average in the United States based on U.S. Treasury Securities at 30-Year Constant Maturity.",
+  "data": {
+    "url": "../data/1.csv",
+    "format": {"type": "csv"}
+  },
+  "width": 800,
+  "height": 400,
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {
+      "field": "observation_date",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {"format": "%Y"}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Yield (%)"
+    },
+    "color": {
+      "field": "symbol",
+      "type": "nominal",
+      "title": "Bond Yield Type",
+      "legend": {
+        "orient": "top", 
+        "title": null,  
+        "labelExpr": "datum.value === 'AAABAA' ? 'AAABAA:Moody\\'s Seasoned Baa Corporate Bond Yield:\\n Market Yield on U.S. ' :'DGS:30-Year Fixed Rate Mortgage Average'",
+        "labelFont": "monospace",
+        "labelFontSize": 12,
+        "labelLimit": 500  
+      }
+    },
+    "tooltip": [
+      {"field": "observation_date", "type": "temporal", "title": "Date", "format": "%Y-%m-%d"},
+      {"field": "symbol", "type": "nominal", "title": "Symbol"},
+      {"field": "value", "type": "quantitative", "title": "Value", "format": ".2%"}
+    ]
+  }
+}

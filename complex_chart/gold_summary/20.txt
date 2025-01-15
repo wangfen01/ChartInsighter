@@ -1,0 +1,7 @@
+The line chart illustrates the changes in the average retirement age for women in the USA and Cyprus from 1982 to 2018.
+
+For the USA, the retirement age fluctuated slightly but remained relatively stable over the 36 years.    It slightly fell from 1982 to 1986, followed by a rise in the late 1980s, then fluctuated downwards, reaching its lowest point of 63 years in 2002.    And then it rebounded later, fluctuating upwards to 66.5 in 2018.
+
+In contrast, in Cyprus, the retirement age initially exceeded seventy, stabilizing until 1988.    In 1990, it experienced a sharp drop to 65.1, followed by another fall from 1991 to 1998, even dipping to 59.5.    It rebounded to 64.4 years in 2001 but later fell again to 61.3 in 2004.    Then it experienced two falls in 2006 and 2009, and it finally rose back to a relatively stable 62 years.    Though the average retirement age for women in Cyprus was quite volatile, it showed a downward trend overall.
+
+In comparison, the retirement age in the USA was more stable, ranging between 63 and 67 years, while in Cyprus, the retirement age saw greater variability, dropping from over seventy in the 1980s.

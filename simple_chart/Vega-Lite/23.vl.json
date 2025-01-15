@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Government health expenditure as a share of GDP, 1880 to 2020"
+  },
+  "data": {
+    "url": "../data/23.csv",
+    "format": {
+      "type": "csv"
+    }
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year"
+      }
+    },
+    "y": {
+      "field": "public_health_expenditure_pc_gdp",
+      "type": "quantitative",
+      "axis": {
+        "title": "Government Health Expenditure (% of GDP)"
+      }
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {
+        "title": "Country"
+      }
+    },
+    "tooltip": [
+      {"field": "Entity", "type": "nominal"},
+      {"field": "Year", "type": "temporal"},
+      {"field": "public_health_expenditure_pc_gdp", "type": "quantitative", "title": "Health Expenditure (% of GDP)"}
+    ]
+  }
+}

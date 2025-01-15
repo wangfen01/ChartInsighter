@@ -1,0 +1,5 @@
+This line chart illustrates changes in "VALUE" for two categories, "CN"(Consumer Price Index for All Urban Consumers: Sugar and Sweets in U.S. City Average) and "PN"(Global price of Sugar, No. 16, U.S.), from January 1990 to July 2023.    The x-axis represents time, and the y-axis shows "VALUE," reflecting trends for both categories over this period.
+
+"CN" demonstrates steady, long-term growth.   "PN", in contrast, exhibits pronounced volatility.    It fell at first in 1990 while generally grew from 1991 to 1995, declined from 1995 to mid-2002, with a jump to 68.2 in mid-2001, then recovered from 2004 to early 2006 at 116.2 before another dip to 63.3 in 2007.    A sharp rise from 2007 peaked in 2011 at 192.4, followed by declines until mid-2015.    Growth resumed, and "PN" declined again from late 2016 to mid-2018.    A final significant rise spanned early 2020 to April 2023.    "PN" is defined by its boom-and-bust cycles, with sharp rises and falls.
+
+While "CN" displays stability and steady growth, "PN" shows dynamic and unpredictable behavior.

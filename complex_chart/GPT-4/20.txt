@@ -1,0 +1,11 @@
+The data chart compares the average effective age of retirement for women between Cyprus and the United States from 1982 to 2018. Observing the retirement age trends, Cyprus shows a significant variation over the years. Starting at 70.9 in 1982, the retirement age gradually increases to a peak of 71.2 by 1988, then notably declines to 59.5 by 1997, and stabilizes around the low 60s towards 2018. This decline from the late 1980s through the 1990s into the early 2000s suggests a shift in retirement policies or economic conditions influencing earlier retirement.
+
+In contrast, the United States presents a more stable retirement age trajectory. Beginning at 66.1 in 1982, there was a slight decrease to 63.5 by 1994, followed by a general stabilization and a gradual increase back to 66.5 by 2018. The relative stability in the U.S. data may reflect consistent retirement policies or economic conditions that did not necessitate significant changes in retirement age.
+
+These contrasting trends highlight different socio-economic or policy environments in Cyprus and the United States, affecting retirement ages. The sharp fluctuations in Cyprus compared to the stability in the U.S. suggest varying degrees of economic volatility or shifts in national retirement policies.
+
+
+
+
+
+

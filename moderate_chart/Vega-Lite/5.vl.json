@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Line chart showing reported cases of acute respiratory infections over time for different countries.",
+  "data": {
+    "url": "../data/5.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Month",
+      "type": "temporal",
+      "title": "Date",
+      "axis": {"format": "%Y-%m"}
+    },
+    "y": {
+      "field": "Reported cases of acute respiratory infections",
+      "type": "quantitative",
+      "title": "Reported Cases"
+    },
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "title": "Region",
+      "legend": {
+        "orient": "top",
+        "title": null,
+        "labelFont": "monospace",
+        "labelFontSize": 12,
+        "labelLimit": 500
+      }
+    },
+    "tooltip": [
+      {"field": "Month", "type": "temporal", "title": "Date", "format": "%Y-%m-%d"},
+      {"field": "Country", "type": "nominal", "title": "Region"},
+      {"field": "Reported cases of acute respiratory infections", "type": "quantitative", "title": "Reported Cases"}
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "width": 900,   
+  "height": 500
+}

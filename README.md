@@ -46,3 +46,16 @@ In our benchmark, we manually annotated each summary sentence, marking the prese
 1. The Hallucination Rate of the generated summary.
 
 2. The Semantic Richness of the generated summary.
+
+## Citation
+
+If you find that ChartInsighter helps your research, please consider citing it:  
+
+```bibtex
+@article{wang2025chartinsighter,
+  title={ChartInsighter: An Approach for Mitigating Hallucination in Time-series Chart Summary Generation with A Benchmark Dataset},
+  author={Wang, Fen and Wang, Bomiao and Shu, Xueli and Liu, Zhen and Shao, Zekai and Liu, Chao and Chen, Siming},
+  journal={arXiv preprint arXiv:2501.09349},
+  year={2025}
+}
+```
